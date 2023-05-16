@@ -1,0 +1,142 @@
+/* Variables */
+:root {
+    --white: #fff;
+    --black: hsl(0, 0%, 8%);
+    --grey: hsl(0, 0%, 41%);
+}
+
+body{
+    margin: 25px 30px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left{
+    display: flex;
+}
+
+.header-left nav{
+    margin-left: 70px;
+}
+
+.header-left nav div{
+    margin: 0 15px;
+}
+
+.header-left nav a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: var(--grey);
+}
+
+.header-left nav a:hover{
+    color: var(--black);
+}
+
+.header-right nav a{
+    margin: 0 14px;
+    text-decoration: none;
+    color: var(--grey);
+}
+
+.header-right nav a:hover{
+    color: var(--black);
+}
+
+.header-right nav a:nth-child(2){
+    background-color: var(--white);
+    padding: 10px 15px;
+    border-style: solid;
+    border-color: var(--grey);
+    border-radius: 10px;
+}
+
+.header-right nav a:nth-child(2):hover{
+    border-color: var(--black);
+}
+
+/* Arrow */
+.arrow-dropdown-1{
+    position: relative;
+    display: inline;
+}
+
+.arrow-dropdown-2{
+    position: relative;
+    display: inline;
+}
+
+.arrow-text{
+    cursor: pointer;
+    display: inline;
+    color: var(--grey);
+}
+
+.arrow-text:hover{
+    color: var(--black);
+}
+
+.arrow {
+    width: 12px;
+    height: 12px;
+    font-size: 12px;
+    position: absolute;
+    top: 5px;
+}
+  
+.arrow span {
+    top: 4px;
+    position: absolute;
+    width: 8px;
+    height: 2px;
+    background-color: var(--black);
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+  
+.arrow span:first-of-type {
+    left: 0;    
+    transform: scale(0.9) rotate(45deg);
+}
+  
+.arrow span:last-of-type {
+    right: 0;
+    transform: scale(0.9) rotate(-45deg);
+}
+  
+.arrow.active span:first-of-type {
+    transform: scale(0.9) rotate(-45deg);
+}
+  
+.arrow.active span:last-of-type {
+    transform: scale(0.9) rotate(45deg);
+
+}
+  
+.arrow:hover {
+    cursor: pointer;
+}
+
+.dropdown-content-1{
+    position: absolute;
+    background-color: var(--white);
+    width: 130px;
+    padding: 10px 10px;
+    left: -90px;
+    top: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 1px 49px rgb(166, 166, 166);
+}
+
+.dropdown-content-1 a{
+    display: block;
+    color: var(--grey);
+    line-height: 30px;
+}
+
+.dropdown-content-1 a span{
+    margin-right: 30px;
+}
