@@ -129,6 +129,10 @@ header{
     top: 30px;
     border-radius: 10px;
     box-shadow: 2px 1px 49px rgb(166, 166, 166);
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
 }
 
 .dropdown-content-1 a{
@@ -139,4 +143,35 @@ header{
 
 .dropdown-content-1 a span{
     margin-right: 30px;
+}
+
+.dropdown-content-1.active-content{
+    transform: translateY(0);
+    pointer-events: all;
+    opacity: 1;
+}
+
+.dropdown-content-2{
+    position: absolute;
+    background-color: var(--white);
+    width: 110px;
+    padding: 10px 0;
+    left: -30px;
+    top: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 1px 49px rgb(166, 166, 166);
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.dropdown-content-2 p{
+    text-align: start;
+}
+
+.dropdown-content-2.active-content{
+    transform: translateY(0);
+    pointer-events: all;
+    opacity: 1;
 }
