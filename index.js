@@ -60,3 +60,15 @@ document.addEventListener("click", (e)=>{
     dropDownContent2.classList.remove("active-content");
   }
 });
+
+const openBtn = document.querySelector("[data-toggler-open]");
+const closeBtn = document.querySelector("[data-toggler-close]");
+const sideBarContent = document.querySelector("[data-toggler-content]");
+
+openBtn.addEventListener("click", ()=>{
+  sideBarContent.classList.toggle("active-bar");
+});
+
+closeBtn.addEventListener("click", ()=>{
+  sideBarContent.classList.toggle("active-bar");
+});
