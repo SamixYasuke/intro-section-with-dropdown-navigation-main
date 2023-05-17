@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
 /* Variables */
 :root {
     --white: #fff;
@@ -7,6 +9,8 @@
 
 body{
     margin: 25px 30px;
+    overflow-x: hidden;
+    font-family: 'Epilogue', sans-serif;
 }
 
 header{
@@ -179,7 +183,7 @@ header{
     opacity: 1;
 }
 
-@media screen and (max-width: 722px){
+@media screen and (max-width: 788px){
     header{
         display: none;
     }
@@ -199,8 +203,17 @@ header{
         width: 200px;
         top: 0;
         bottom: 0;
-        right: 0;
+        right: -300px;
         padding: 13px 20px;
+        visibility: hidden;
+        opacity: 0;
+        transition: right 150ms ease-in-out, visibility 120ms 0s, opacity 100ms ease-out;
+    }
+
+    .header-menu-content.active-bar{
+        visibility: visible;
+        opacity: 1;
+        right: 0;
     }
 
     .header-menu-content p{
