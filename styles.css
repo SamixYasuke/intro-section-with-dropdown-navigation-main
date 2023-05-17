@@ -198,12 +198,12 @@ header{
     }
 
     .header-menu-content{
-        position: absolute;
-        background-color: aqua;
+        position: fixed;
+        background-color: var(--white);
         width: 200px;
         top: 0;
         bottom: 0;
-        right: -300px;
+        right: -200px;
         padding: 13px 20px;
         visibility: hidden;
         opacity: 0;
