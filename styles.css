@@ -207,7 +207,7 @@ header{
         padding: 13px 20px;
         visibility: hidden;
         opacity: 0;
-        transition: right 150ms ease-in-out, visibility 120ms 0s, opacity 100ms ease-out;
+        transition: right 0.5s ease-in-out, visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
     }
 
     .header-menu-content.active-bar{
