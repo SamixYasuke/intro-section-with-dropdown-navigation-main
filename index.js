@@ -72,3 +72,18 @@ openBtn.addEventListener("click", ()=>{
 closeBtn.addEventListener("click", ()=>{
   sideBarContent.classList.toggle("active-bar");
 });
+
+
+const featuresMobile = document.querySelector(".header-mobile .header-menu-content p");
+const featuresContent = document.querySelector(".features-content");
+const companyMobile = document.querySelector(".company");
+const companyContent = document.querySelector(".company-content");
+
+
+featuresMobile.addEventListener("click", ()=>{
+  featuresContent.classList.toggle("active");
+});
+
+companyMobile.addEventListener("click", ()=>{
+  companyContent.classList.toggle("active");
+})
