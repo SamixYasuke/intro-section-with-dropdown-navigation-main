@@ -7,12 +7,17 @@
     <title>Intro Dropdown Section</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="index.js" defer></script>
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <header>
       <div class="header-left">
         <img src="images/logo.svg" alt="logo" />
-        <nav>
+        <nav role="navigation">
           <div class="arrow-dropdown-1" data-dropdown>
             <p class="arrow-text">Features</p>
             <span class="arrow">
@@ -82,7 +87,33 @@
           />
         </div>
         <p>Features</p>
-        <p>Company</p>
+        <div class="features-content">
+          <a href="#"
+            ><span><img src="images/icon-todo.svg" alt="icon-todo" /></span>ToDo
+            List</a
+          >
+          <a href="#"
+            ><span
+              ><img src="images/icon-calendar.svg" alt="icon-calendar" /></span
+            >Calendar</a
+          >
+          <a href="#"
+            ><span
+              ><img src="images/icon-reminders.svg" alt="icon-calendar" /></span
+            >Reminder</a
+          >
+          <a href="#"
+            ><span
+              ><img src="images/icon-planning.svg" alt="icon-planning" /></span
+            >Planning</a
+          >
+        </div>
+        <p class="company">Company</p>
+        <div class="company-content">
+          <p><a href="#">History</a></p>
+          <p><a href="#">Our Team</a></p>
+          <p><a href="#">Blog</a></p>
+        </div>
         <p>Careers</p>
         <p>About</p>
         <a href="#">Login</a>
@@ -90,7 +121,7 @@
       </div>
     </div>
 
-    <div class="main-content">
+    <div class="main-content" role="main">
       <div class="main-content-1">
         <div class="main-content-1-header"><h1>Make Remote work</h1></div>
         <div class="main-content-1-text">
@@ -112,7 +143,7 @@
       </div>
     </div>
 
-    <div class="main-content-mobile">
+    <div class="main-content-mobile" role="main">
       <img src="images/image-hero-mobile.png" alt="image-hero-mobile" />
       <h1>Make remote work</h1>
       <p>
@@ -130,4 +161,24 @@
       </div>
     </div>
   </body>
+  <footer>
+    <p>
+      Challenge By
+      <span
+        ><a target="_blank" href="https://www.frontendmentor.io/challenges"
+          >FrontEnd Mentor</a
+        ></span
+      >
+    </p>
+    <p>
+      Completed By
+      <span
+        ><a
+          target="_blank"
+          href="https://www.frontendmentor.io/profile/SamixYasuke"
+          >Samuel Adekolu</a
+        ></span
+      >
+    </p>
+  </footer>
 </html>
