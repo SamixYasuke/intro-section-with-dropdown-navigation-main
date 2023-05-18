@@ -214,6 +214,7 @@ header{
 
 .main-content-1-text p{
     font-size: 1.7vw;
+    color: var(--grey);
 }
 
 .main-content-1 a{
