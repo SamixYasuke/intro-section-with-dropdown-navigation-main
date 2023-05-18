@@ -259,6 +259,12 @@ header{
     display: none;
 }
 
+
+footer{
+    margin-top: 90px;
+    display: flex;
+    gap: 10px;
+}
 @media screen and (max-width: 788px){
     header{
         display: none;
@@ -331,6 +337,36 @@ header{
         justify-content: right;
         cursor: pointer;
     }
+
+    .features-content{
+        display: none;
+        transition: opacity 1s ease-in-out;
+    }
+
+    .features-content.active{
+        display: block;
+    }
+
+    .features-content a{
+        text-align: center;
+    }
+
+    .features-content a span{
+        margin-right: 30px;
+    }
+
+    .company-content{
+        display: none;
+    }
+
+    .company-content.active{
+        display: block;
+    }
+
+    .company-content p a{
+        text-align: center;
+    }
+
 
     .main-content{
         display: none;
