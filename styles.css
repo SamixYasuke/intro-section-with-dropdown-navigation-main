@@ -341,6 +341,7 @@ header{
     }
 
     .main-content-mobile{
+        margin-top: 80px;
         display: block;
     }
 
